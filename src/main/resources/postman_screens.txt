@@ -1,0 +1,23 @@
+______________________________________________________
+POST	http://localhost:8082/api/v1/order 		SEND
+______________________________________________________
+			BODY
+					RAW
+							JSON
+{
+	"order" : {
+		"totalQuantity" : 15,
+		"totalPrice" : 78.5,
+		"shoppingKartId" : 3
+	},
+	"payment" : {
+		"paymentType" : "DEBIT",
+		"cardNumber" : "3587 9658 5845 9812",
+		"expiryYear" : 2025,
+		"expiryMonth" : 12,
+		"cvv" : 820,
+		"orderId" : "2"
+	}
+}
+______________________________________________________
+
